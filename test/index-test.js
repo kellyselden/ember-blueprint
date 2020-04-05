@@ -56,6 +56,14 @@ describe('blueprint', function() {
       cwd
     });
 
+    let {
+      name,
+      version
+    } = require('../package');
+
+    expect(require(path.join(cwd, 'package')).devDependencies)
+      .to.have.property(name, version);
+
     expect(path.join(cwd, '.travis.yml'))
       .to.be.a.file().with.contents.that.match(/repo: foo\/bar/);
   });
