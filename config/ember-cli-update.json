@@ -24,6 +24,15 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ember-cli-blueprint",
+      "version": "0.1.7",
+      "blueprints": [
+        {
+          "name": "ember-cli-blueprint"
+        }
+      ]
     }
   ]
 }

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "My extended Ember.js blueprint",
   "main": "index.js",
+  "files": [
+    "files"
+  ],
   "scripts": {
     "lint": "eslint . --ext js,json",
     "test": "mocha --recursive"
