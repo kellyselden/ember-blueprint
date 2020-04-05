@@ -18,6 +18,6 @@
         edge: true # opt in to dpl v2
         on:
           tags: true
-          repo: kellyselden/ember-a11y-blueprint
+          repo: <%= repoSlug %>
 
 script:

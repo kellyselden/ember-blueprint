@@ -50,12 +50,13 @@ describe('blueprint', function() {
     await emberInit({
       args: [
         '-b',
-        this.blueprintPath
+        this.blueprintPath,
+        '--repo-slug=foo/bar'
       ],
       cwd
     });
 
     expect(path.join(cwd, '.travis.yml'))
-      .to.be.a.file().with.contents.that.match(/name: ember-cli-update/);
+      .to.be.a.file().with.contents.that.match(/repo: foo\/bar/);
   });
 });
