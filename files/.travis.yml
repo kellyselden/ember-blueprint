@@ -9,6 +9,7 @@
 
     - stage: Deploy
       if: tag IS present
+      name: "Deploy"
       install: ignore
       script: ignore
       deploy:
